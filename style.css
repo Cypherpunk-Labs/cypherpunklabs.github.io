@@ -1,0 +1,134 @@
+/* Global Styling */
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2rem;
+background-color: rgb(79, 79, 79);
+color: white;
+}
+
+header nav ul li {
+list-style: none;
+display: inline-block;
+margin-right: 2rem;
+}
+
+header nav ul li a {
+text-decoration: none;
+color: inherit;
+}
+
+header h1 {
+margin: 0;
+}
+
+/* Main Content */
+main {
+max-width: 960px;
+margin: auto;
+padding: 2rem;
+}
+
+/* Sections */
+section {
+clear: both;
+padding: 2rem;
+}
+
+#home img {
+float: left;
+width: 40%;
+height:auto;
+}
+
+#home.content {
+float: right;
+width: 60%;
+}
+
+#home h2 {
+margin-bottom: 1rem;
+}
+
+#home p {
+font-size: 1.2em;
+}
+
+#home button {
+background-color: blueviolet;
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#about p {
+font-size: 1.2em;
+line-height: 1.6;
+}
+
+.service i {
+float: left;
+width: 60px;
+height: 60px;
+text-align: center;
+line-height: 60px;
+border-radius: 50%;
+margin-right: 1rem;
+background-color: lightgray;
+}
+
+.service h3 {
+margin: 0;
+}
+
+/* Forms */
+form label {
+display: block;
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+form input[type=text], textarea {
+padding: 0.5rem;
+border: 1px solid gray;
+outline: none;
+}
+
+form textarea {
+min-height: 80px;
+}
+
+form input[type=submit] {
+background-color: blueviolet;
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 2rem;
+background-color: rgb(79, 79, 79);
+color: white;
+}
+
+footer p {
+font-size: 0.8em;
+}
