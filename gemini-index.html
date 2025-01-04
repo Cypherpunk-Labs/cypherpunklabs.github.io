@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherPunk Labs</title>
+    <link rel="stylesheet" href="g-style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <!-- <div class="logo-container"> 
+                <div class="logo">
+                </div>
+            </div> -->
+        <div class="company-info">
+            <a href="#"><img src="logo1.png" alt="Your Company Logo" height="100%"></a> 
+            <h1>CypherPunk Labs</h1>
+            <p>Cybersecurity, Blockchain/Web3, & Software Engineering Solutions</p>
+        </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Empowering Businesses with Cutting-Edge Technology</h2>
+            <p>We help entrepreneurs build secure and innovative businesses.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of experienced professionals dedicated to providing top-tier cybersecurity, blockchain/web3 development, and software engineering solutions. We help businesses of all sizes navigate the complexities of the digital world.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Cybersecurity Audits & Assessments</li>
+                <li>Blockchain/Web3 Application Development</li>
+                <li>Custom Software Development</li>
+                <li>Cloud Security Consulting</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- 
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"[Testimonial 1]"</p>
+                <p>- [Client Name], [Company Name]</p>
+            </div>
+            <div class="testimonial">
+                <p>"[Testimonial 2]"</p>
+                <p>- [Client Name], [Company Name]</p>
+            </div>
+        </div>
+    </section>
+-->
+
+<!-- This will pop up a client side prompt to use the users email client -->
+<!-- <section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="response-message"></div> 
+    </div>
+</section>
+<script src="script.js"></script>  -->
+
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="e8cb69fc-f6c2-4c8f-8434-19ee62fb010e">
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Submit Message</button>
+        </form>
+        <div id="response-message"></div> 
+    </div>
+</section>        
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CypherPunk Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
