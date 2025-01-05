@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    /* max-height: 300px; */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo-container {
+    /* max-height: 290px; */
+    display: flex; 
+}
+
+.logo {
+    /* max-height: 285px; */
+    /* width: 25%;  */
+}
+
+.company-info {
+    /* max-height: 285px; */
+    /* width: 75%; */
+    align-self: flex-end;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about,
+.services,
+.testimonials,
+#contact {
+    padding: 4rem 0;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.testimonials .testimonial {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

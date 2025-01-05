@@ -1,66 +1,92 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherPunk Labs</title>
+    <link rel="stylesheet" href="g-style.css">
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="<KEY>" crossorigin="anonymous"/>
-
-    <style type="text/css">
-        /* Centered Image */
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    </style>
-
-    <link rel="stylesheet" href="./style.css"
-
-  </head>
-  <body>
-        <!-- Centered Image -->
+    <header>
         <div class="container">
-                <img src="Logo1.png" alt="Image Alt Text" width="50%" height="50%">
+        <div class="company-info">
+            <a href="#"><img src="./Logo1.png" alt="Your Company Logo" height="100%"></a> 
+            <h1>CypherPunk Labs</h1>
+            <p>Cybersecurity, Blockchain/Web3, & Software Engineering Solutions</p>
         </div>
+        </div>
+    </header>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="<KEY>" crossorigin="anonymous"></script>
+    <section class="hero">
         <div class="container">
-            <p>
-                <h1>We help apply cryptography to safeguard your business activities</h1>
-                <br>
-                We help businesses protect their cloud/web/AI infrastructure from threats such as ransomware, malware, and unauthorized access. Our team of experts can assess your environment, identify risks, and recommend solutions to keep your data safe and secure.
-                <br>
-                We apply secure software development practices into your pipelines granting faster feedback to developers leveraging microservice architecture based on kubernetes.
-                <br>
-                We also provide consulting services to help you understand the risks and opportunities of adopting cloud/web3/AI technologies.
-                <br>
-                We are a team of cybersecurity and software experts with over 10 years of experience in the cybersecurity industry. We are passionate about helping organizations achieve their goals.
-                <br>
-            </p>
+            <h2>Empowering Businesses with Cutting-Edge Technology</h2>
+            <p>We help entrepreneurs build secure and innovative businesses.</p>
+            <a href="#contact" class="btn">Contact Us</a>
         </div>
-    <!-- Contact Form -->
-      <!-- <section id="contact">
+    </section>
+
+    <section class="about">
         <div class="container">
-          <h2>Get In Touch</h2>
-          <form action="">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required /><br />
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" required /><br />
-            <label for="message">Message:</label>
-            <textarea id="message" rows="5" required ></textarea><br />
-            <input type="submit" value="Submit Message" />
-          </form>
+            <h2>About Us</h2>
+            <p>We are a team of experienced professionals dedicated to providing top-tier cybersecurity, blockchain/web3 development, and software engineering solutions. We help businesses of all sizes navigate the complexities of the digital world.</p>
         </div>
-      </section> -->
-  </body>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Cybersecurity Audits & Assessments</li>
+                <li>Blockchain/Web3 Application Development</li>
+                <li>Custom Software Development</li>
+                <li>Cloud Security Consulting</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- 
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"[Testimonial 1]"</p>
+                <p>- [Client Name], [Company Name]</p>
+            </div>
+            <div class="testimonial">
+                <p>"[Testimonial 2]"</p>
+                <p>- [Client Name], [Company Name]</p>
+            </div>
+        </div>
+    </section>
+-->
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="e8cb69fc-f6c2-4c8f-8434-19ee62fb010e">
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Submit Message</button>
+        </form>
+        <div id="response-message"></div> 
+    </div>
+</section>        
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CypherPunk Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
